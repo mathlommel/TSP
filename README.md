@@ -14,4 +14,4 @@ And for the heuristic ones :
 - Lin-Kernighan heuristic (2-opt) : having a first hamiltonian circuit, we try iteratively to uncross crossed paths, in order to reduce the global cost
 - Ant Colony heuristic : trying to reproduce ants behavior, in order to find a solution close to the best cycle.
 
-
+Those algorithms can be tested on different instances (.tsp files). To change the algorithm or the instance, we just have to change the Strings *instance* (among *gr17.tsp*, *gr21.tsp*, *gr24.tsp* or other...) and *method* (among *ac*, *dfj*, *hk*, *lk*, *mtz* or *nn*).
