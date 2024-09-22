@@ -3,15 +3,13 @@ import numpy as np
 import pathlib
 import time
 import tsplib95
-#from solve_ac import solve_ac
-from solve_ct import solve_ct
-from OKsolve_dfj import solve_dfj
-from OKsolve_hk import solve_hk
-from OKsolve_lk import solve_lk
-from OKsolve_mtz import solve_mtz
-from OKsolve_nn import solve_nn
-from solve_hk2 import solve_hk2
-from OKsolve_ac import solve_ac
+
+from Algorithms.OKsolve_dfj import solve_dfj
+from Algorithms.OKsolve_hk import solve_hk
+from Algorithms.OKsolve_lk import solve_lk
+from Algorithms.OKsolve_mtz import solve_mtz
+from Algorithms.OKsolve_nn import solve_nn
+from Algorithms.OKsolve_ac import solve_ac
 
 
 
@@ -41,8 +39,6 @@ if __name__ == "__main__":
     t0 = time.time()
     if method == "ac":
         cost = solve_ac(M)
-    elif method == "ct":
-        cost = solve_ct(M)
     elif method == "dfj":
         cost = solve_dfj(M)
     elif method == "hk":
